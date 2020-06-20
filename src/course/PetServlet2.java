@@ -22,7 +22,8 @@ public class PetServlet2 extends HttpServlet {
         if (legs ==0) return "a goldfish"; 
         if (legs ==4) { 
            if (weight<20) return "a cat"; 
-           if (weight<100) return "a dog"; 
+           if (weight<100) return "a dog";
+
         } 
         return "a house plant"; 
     } 

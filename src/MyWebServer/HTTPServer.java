@@ -1,27 +1,27 @@
-package MyWebServer;
+package mywebserver;
 
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class HTTPServer {
+public class HttpServer {
     public static void main(String a[]) throws Exception {
-        final int httpd = 80;
-        ServerSocket ssock = null;
-        try {
-            ssock = new ServerSocket(httpd);
-            System.out.println("have opened port 80 locally");
+        final int httpd = 8081;
+        ServerSocket ssock = new ServerSocket(httpd);
+        System.out.println("Listening the port 8081 locally...");
+        while (true) {
             Socket sock = ssock.accept();
             System.out.println("client has made socket connection");
-            OneConnection_B client = new OneConnection_B(sock);
-            String s = client.getRequest();
-            client.sendFile("ex.html");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
+            OneConnection client = new OneConnection(sock);
+            new Thread(client).start();
+
+        }
+
+//        try {
+//            ssock.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        System.out.println("HttpServer close");
+    }
 }

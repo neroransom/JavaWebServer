@@ -1,4 +1,4 @@
-package MyWebServer;
+package mywebserver;
 
 public class WebServer {
 }

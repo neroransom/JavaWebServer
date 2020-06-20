@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8c5385e-ceb3-4e7f-a405-c25f168830bf" name="Default Changelist" comment="" />
+    <list default="true" id="f8c5385e-ceb3-4e7f-a405-c25f168830bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyWebServer/http/HTTPRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyWebServer/http/HTTPResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyWebServer/process/HttpProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mywebbroswer/Browser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mywebbroswer/ReadURL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWebSever.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWebSever.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/HTTPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/HTTPServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/HTTPServer4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/OneConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/OneConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/OneConnection_A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/OneConnection_B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/OneConnection_C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/course/PetServlet2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/course/PetServlet2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebServer/HTTPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/HTTPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebServer/HTTPServer4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebServer/OneConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/OneConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebServer/OneConnection_A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebServer/OneConnection_B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebServer/OneConnection_C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebTester/Browser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebTester/ReadURL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/course/PetServlet2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/PetServlet2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mywebserver/WebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mywebserver/WebServer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,24 +43,31 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/MyWebServer" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dMGmwysLmeizraXyZtKt7yoOl3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20574713" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.HTTPServer4">
+  <component name="RunManager" selected="Application.HttpServer">
     <configuration name="HTTPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyWebServer.HTTPServer" />
       <module name="JavaWebSever" />
@@ -52,6 +87,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="MyWebServer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mywebserver.HttpServer" />
+      <module name="JavaWebSever" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mywebserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,9 +129,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HttpServer" />
+        <item itemvalue="Application.HTTPServer" />
         <item itemvalue="Application.HTTPServer4" />
         <item itemvalue="Application.ReadURL (1)" />
-        <item itemvalue="Application.HTTPServer" />
         <item itemvalue="Application.ReadURL" />
       </list>
     </recent_temporary>
@@ -102,57 +151,75 @@
       <workItem from="1592290963031" duration="17455000" />
       <workItem from="1592311978528" duration="187000" />
       <workItem from="1592324314669" duration="4293000" />
+      <workItem from="1592399419938" duration="3238000" />
+      <workItem from="1592492123988" duration="189000" />
+      <workItem from="1592631506504" duration="23807000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="232" y="2" key="#Project_Structure" timestamp="1592227726308">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="232" y="2" key="#Project_Structure/0.0.1280.689@0.0.1280.689" timestamp="1592227726308" />
-    <state width="1235" height="212" key="GridCell.Tab.0.bottom" timestamp="1592329480124">
+    <state x="420" y="84" key="FileChooserDialogImpl" timestamp="1592492294388">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="212" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1592329480124" />
-    <state width="1235" height="212" key="GridCell.Tab.0.center" timestamp="1592329480124">
+    <state x="420" y="84" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1592492294388" />
+    <state width="1235" height="165" key="GridCell.Tab.0.bottom" timestamp="1592665422823">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="212" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1592329480124" />
-    <state width="1235" height="212" key="GridCell.Tab.0.left" timestamp="1592329480124">
+    <state width="1235" height="165" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1592665422823" />
+    <state width="1235" height="165" key="GridCell.Tab.0.center" timestamp="1592665422823">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="212" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1592329480124" />
-    <state width="1235" height="212" key="GridCell.Tab.0.right" timestamp="1592329480124">
+    <state width="1235" height="165" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1592665422823" />
+    <state width="1235" height="165" key="GridCell.Tab.0.left" timestamp="1592665422823">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="212" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1592329480124" />
-    <state width="1235" height="291" key="GridCell.Tab.1.bottom" timestamp="1592329478839">
+    <state width="1235" height="165" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1592665422823" />
+    <state width="1235" height="165" key="GridCell.Tab.0.right" timestamp="1592665422823">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="291" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1592329478839" />
-    <state width="1235" height="291" key="GridCell.Tab.1.center" timestamp="1592329478839">
+    <state width="1235" height="165" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1592665422823" />
+    <state width="1235" height="165" key="GridCell.Tab.1.bottom" timestamp="1592665422824">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="291" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1592329478839" />
-    <state width="1235" height="291" key="GridCell.Tab.1.left" timestamp="1592329478839">
+    <state width="1235" height="165" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1592665422824" />
+    <state width="1235" height="165" key="GridCell.Tab.1.center" timestamp="1592665422823">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="291" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1592329478839" />
-    <state width="1235" height="291" key="GridCell.Tab.1.right" timestamp="1592329478839">
+    <state width="1235" height="165" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1592665422823" />
+    <state width="1235" height="165" key="GridCell.Tab.1.left" timestamp="1592665422823">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="291" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1592329478839" />
-    <state x="120" y="0" key="SettingsEditor" timestamp="1592293052816">
+    <state width="1235" height="165" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1592665422823" />
+    <state width="1235" height="165" key="GridCell.Tab.1.right" timestamp="1592665422824">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="120" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1592293052816" />
-    <state x="323" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1592324314702">
+    <state width="1235" height="165" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1592665422824" />
+    <state x="47" y="0" key="SettingsEditor" timestamp="1592631533364">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="323" y="167" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1592324314702" />
+    <state x="47" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1592631533364" />
+    <state x="323" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1592492202279">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="323" y="167" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1592492202279" />
+    <state x="27" y="0" key="new project wizard" timestamp="1592492310231">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="27" y="0" key="new project wizard/0.0.1280.689@0.0.1280.689" timestamp="1592492310231" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1592642103955">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1592642103955" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -163,20 +230,18 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MyWebServer/OneConnection_A.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MyWebServer/OneConnection_B.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/mywebserver/HttpServer.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="((SocketOutputStream)out.out).socket" custom="java.net.SocketOutputStream" />
+        <watch expression="fname.substring(1);" />
+        <watch expression="s = in.readLine()" />
+        <watch expression="configuration" />
       </configuration>
     </watches-manager>
   </component>
