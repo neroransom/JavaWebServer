@@ -1,5 +1,7 @@
 package mywebserver.servlet;
 
+import mywebserver.http.ErrorSender;
+
 import java.io.IOException;
 
 public class HttpServlet {
@@ -15,10 +17,12 @@ public class HttpServlet {
         }
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        new ErrorSender(response).sendHtml404Servlet();
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        new ErrorSender(response).sendHtml404Servlet();
     }
 
     public void init() {

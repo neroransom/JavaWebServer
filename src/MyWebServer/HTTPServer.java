@@ -1,10 +1,24 @@
 package mywebserver;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.HashMap;
+import java.util.Map;
 
 public class HttpServer {
+    public static Map<String, String> configuration = new HashMap<>();
+
     public static void main(String a[]) throws Exception {
+
+        System.out.println("...");
+        String config = readFile("web/WEB-INF/web.xml");
+        loadXML(config);
+        config.toString();
+
         final int httpd = 8081;
         ServerSocket ssock = new ServerSocket(httpd);
         System.out.println("Listening the port 8081 locally...");
@@ -24,4 +38,42 @@ public class HttpServer {
 //        }
 //        System.out.println("HttpServer close");
     }
+
+
+    public static String readFile(String filePath) {
+        String content = "";
+        try {
+            File file = new File(filePath);
+            if (file.isFile()) {
+                InputStreamReader read = new InputStreamReader(new FileInputStream(file), "utf-8");
+                BufferedReader bufferedReader = new BufferedReader(read);
+                String s = null;
+                while ((s = bufferedReader.readLine()) != null) {
+                    content+=s;
+                }
+                read.close();
+            } else {
+                System.out.println("找不到XML");
+            }
+        } catch (Exception e) {
+            System.out.println("读取XML失败");
+            e.printStackTrace();
+        }
+        return content;
+    }
+
+    public static void loadXML(String content) {
+        configuration.clear();
+        int begin = 0;
+        int end;
+        while ((end = content.indexOf("<servlet-name>", begin)) != -1) {
+            begin = end + 14;
+            content.substring(content.indexOf("<url-pattern>", begin)+ 13, content.indexOf("</url-pattern>", begin));
+            content.substring(content.indexOf("<servlet-class>", begin) + 15, content.indexOf("</servlet-class>", begin))+ "." +content.substring(begin, content.indexOf("</servlet-name>", begin);
+
+            begin = content.indexOf("<servlet-name>", fromIndex) + 14;
+        }
+    }
+
+
 }

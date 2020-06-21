@@ -1,4 +1,4 @@
-package course;
+package mywebserver.course;
 
 import java.io.IOException;
 import javax.servlet.Filter;

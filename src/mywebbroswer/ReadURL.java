@@ -10,7 +10,7 @@ public class ReadURL {
     public static void main(String args[]) throws Exception {
         try {
 
-            URL url = new URL(("http://127.0.0.1:80/ex.html"));
+            URL url = new URL(("http://localhost:8081/3"));
           //  File f =new File("localhost.html");
 
             InputStreamReader isr = new InputStreamReader(url.openStream());
@@ -30,6 +30,7 @@ public class ReadURL {
           //  fw.close();
         } catch (Exception e) {
             System.out.println(e);
+            e.printStackTrace();
         }
     }
 }

@@ -1,5 +1,4 @@
-package course;
-
+package mywebserver.course;
 //   The Servlet library is needed to compile this code.
 //   That is NOT included in the JDK download.
 
@@ -10,13 +9,13 @@ package course;
 // compile with javac -Djava.ext.dirs=%TOMCAT_HOME%\common\lib PetServlet.java 
 // or make sure the servlet-api.jar is in the CLASSPATH
 
-import javax.servlet.*; 
-import javax.servlet.http.*; 
-import java.io.*; 
+
+import mywebserver.servlet.*;
+import java.io.*;
 import java.text.*; 
 import java.util.*; 
 
-public class PetServlet2 extends HttpServlet { 
+public class PetServlet2 extends HttpServlet {
 
     private String recommendedPet(int weight, int legs) { 
         if (legs ==0) return "a goldfish"; 
