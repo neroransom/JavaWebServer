@@ -31,7 +31,7 @@ class OneConnection implements Runnable {
             HttpRequest request = new HttpRequest(sock);
             String url = request.getUrl();
 
-            if(HttpServer.configuration.containsKey(url)) {
+            if(HttpServer.servletMap.containsKey(url)) {
                    HttpServletSender hss = new HttpServletSender(new HttpServletResponse(request));
                    new Thread(hss).start();
             }

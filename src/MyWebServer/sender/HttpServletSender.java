@@ -6,6 +6,7 @@ import mywebserver.servlet.HttpServletRequest;
 import mywebserver.servlet.HttpServletResponse;
 import mywebserver.servlet.ServletException;
 
+
 import java.io.IOException;
 
 public class HttpServletSender implements Runnable {
@@ -20,9 +21,9 @@ public class HttpServletSender implements Runnable {
     public void run() {
         try {
             response.getOutputStream().writeBytes("HTTP/1.1 200 OK\r\n\r\n");
-            String value = HttpServer.configuration.get(response.getRequest().getUrl());
-            Class clazz = Class.forName(value);
-            HttpServlet servlet = (HttpServlet) clazz.newInstance();
+            String value = HttpServer.servletMap.get(response.getRequest().getUrl());
+            Class aclass = Class.forName(value);
+            HttpServlet servlet = (HttpServlet) aclass.newInstance();
             servlet.service(new HttpServletRequest(response.getRequest()), response);
         } catch (IOException e) {
             e.printStackTrace();

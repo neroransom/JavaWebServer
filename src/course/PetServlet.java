@@ -1,4 +1,4 @@
-package mywebserver.course;
+package course;
 
 //   The Servlet library is needed to compile this code.
 //   That is NOT included in the JDK download.

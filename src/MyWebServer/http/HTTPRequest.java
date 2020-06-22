@@ -44,6 +44,8 @@ public class HttpRequest{
 
         header = sb.toString();
 
+        System.out.println("GOT:\r\n"+header);
+
         if(header.isEmpty())
         {
             return null;

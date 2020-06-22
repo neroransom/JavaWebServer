@@ -13,7 +13,7 @@ public class HttpSender implements Runnable {
     public void run() {
         try {
             if(response.getRequest().getUrl().equals("")){
-                response.sendFile("/index.html");
+                response.sendFile("/all.html");
             }
             else {
                 response.sendFile((response.getRequest().getUrl()));

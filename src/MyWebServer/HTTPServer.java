@@ -10,12 +10,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HttpServer {
-    public static Map<String, String> configuration = new HashMap<>();
+    public static Map<String, String> servletMap = new HashMap<>();
 
     public static void main(String a[]) throws Exception {
 
-        System.out.println("...");
-        String config = readFile("web/WEB-INF/web.xml");
+        System.out.println("Loading configuration...");
+        //String config = readFiletoString("web/WEB-INF/web.xml");
+        String config = readFiletoString("web/WEB-INF/web.xml");
         loadXML(config);
         config.toString();
 
@@ -40,7 +41,7 @@ public class HttpServer {
     }
 
 
-    public static String readFile(String filePath) {
+    public static String readFiletoString(String filePath) {
         String content = "";
         try {
             File file = new File(filePath);
@@ -63,15 +64,17 @@ public class HttpServer {
     }
 
     public static void loadXML(String content) {
-        configuration.clear();
+        servletMap.clear();
         int begin = 0;
-        int end;
-        while ((end = content.indexOf("<servlet-name>", begin)) != -1) {
-            begin = end + 14;
-            content.substring(content.indexOf("<url-pattern>", begin)+ 13, content.indexOf("</url-pattern>", begin));
-            content.substring(content.indexOf("<servlet-class>", begin) + 15, content.indexOf("</servlet-class>", begin))+ "." +content.substring(begin, content.indexOf("</servlet-name>", begin);
+        String name;
+        while ((begin = content.indexOf("<servlet>", begin)) != -1) {
+            begin += 9;
+            String servletName = content.substring(content.indexOf("<servlet-name>", begin)+14, content.indexOf("</servlet-name>", begin));
+            String classMap = content.substring(content.indexOf("<servlet-class>", begin) + 15, content.indexOf("</servlet-class>",  begin));
 
-            begin = content.indexOf("<servlet-name>", fromIndex) + 14;
+            int mapIndex = content.indexOf("<servlet-name>"+servletName+"</servlet-name>",begin);
+            String urlPattern = content.substring(content.indexOf("<url-pattern>", mapIndex)+ 13, content.indexOf("</url-pattern>", mapIndex));
+            servletMap.put(urlPattern,classMap);
         }
     }
 

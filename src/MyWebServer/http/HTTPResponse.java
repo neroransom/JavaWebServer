@@ -24,6 +24,7 @@ public class HttpResponse {
 
     public void sendFile(String fname) throws IOException {
         fname = fname.substring(1);
+        //String where = "web/site/" + fname; // create dir if necessary
         String where = "web/site/" + fname; // create dir if necessary
         if (where.contains(".. "))
             throw new SecurityException("No access to parent dirs");
