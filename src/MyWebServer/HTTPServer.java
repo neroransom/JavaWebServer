@@ -12,7 +12,7 @@ import java.util.Map;
 public class HttpServer {
     public static Map<String, String> servletMap = new HashMap<>();
 
-    public static void main(String a[]) throws Exception {
+    HttpServer() throws Exception {
 
         System.out.println("Loading configuration...");
         //String config = readFiletoString("web/WEB-INF/web.xml");

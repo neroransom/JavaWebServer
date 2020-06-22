@@ -2,45 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8c5385e-ceb3-4e7f-a405-c25f168830bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/course/AccessFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/course/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/course/PetServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/course/PetServlet2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/course/AccessFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/course/Login.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/course/PetServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/course/PetServlet2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site/show3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site/show5.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site/test2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site/test3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site/test4.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/site/test6.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyWebServer/Launcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyWebServer/jsp/HttpJspBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyWebServer/jsp/JspTranslation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaWebSever.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWebSever.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/HTTPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/HTTPServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/OneConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/OneConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/course/AccessFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/course/PetServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/course/PetServlet2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/MyWebServer/WebServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/course/PetServlet2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/course/PetServlet2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/http/HttpRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/http/HttpRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/http/HttpResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/http/HttpResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/sender/HttpSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/sender/HttpSender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/sender/HttpServletSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/sender/HttpServletSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/sender/HttpServletSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/servlet/HttpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/servlet/HttpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/servlet/HttpServletRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/servlet/HttpServletRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/servlet/RequestDispatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaWebSever/mywebserver/servlet/RequestDispatcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyWebServer/HTTPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/HTTPServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyWebServer/OneConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/OneConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyWebServer/course/AccessFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyWebServer/course/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyWebServer/course/PetServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyWebServer/course/PetServlet2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebServer/WebServer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyWebServer/http/HTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/http/HTTPRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyWebServer/http/HTTPResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/http/HTTPResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyWebServer/sender/HttpSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/sender/HttpSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyWebServer/sender/HttpServletSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/sender/HttpServletSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/site/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/site/test1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebServer/servlet/HttpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/servlet/HttpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebServer/servlet/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/servlet/HttpServletRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyWebServer/servlet/RequestDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyWebServer/servlet/RequestDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/course/PetServlet2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/PetServlet2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/site/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,22 +68,9 @@
       <recent name="mywebserver.servlet" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HttpServer">
+  <component name="RunManager" selected="Application.launcher">
     <configuration name="HTTPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyWebServer.HTTPServer" />
-      <module name="JavaWebSever" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MyWebServer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HTTPServer4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyWebServer.HTTPServer4" />
       <module name="JavaWebSever" />
       <extension name="coverage">
         <pattern>
@@ -137,6 +108,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mywebserver.launcher" />
+      <module name="JavaWebSever" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mywebserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mywebbroswer.test" />
       <module name="JavaWebSever" />
@@ -152,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.launcher" />
         <item itemvalue="Application.HttpServer" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.ReadURL (2)" />
         <item itemvalue="Application.HTTPServer" />
-        <item itemvalue="Application.HTTPServer4" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +161,7 @@
       <workItem from="1592399419938" duration="3238000" />
       <workItem from="1592492123988" duration="189000" />
       <workItem from="1592631506504" duration="28526000" />
-      <workItem from="1592705360796" duration="50931000" />
+      <workItem from="1592705360796" duration="70307000" />
     </task>
     <servers />
   </component>
@@ -203,38 +187,38 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="420" y="84" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1592705614479" />
-    <state width="1235" height="285" key="GridCell.Tab.0.bottom" timestamp="1592811332015">
+    <state width="1235" height="172" key="GridCell.Tab.0.bottom" timestamp="1592857332089">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="285" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1592811332015" />
-    <state width="1235" height="285" key="GridCell.Tab.0.center" timestamp="1592811332014">
+    <state width="1235" height="172" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1592857332089" />
+    <state width="1235" height="172" key="GridCell.Tab.0.center" timestamp="1592857332074">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="285" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1592811332014" />
-    <state width="1235" height="285" key="GridCell.Tab.0.left" timestamp="1592811332014">
+    <state width="1235" height="172" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1592857332074" />
+    <state width="1235" height="172" key="GridCell.Tab.0.left" timestamp="1592857332074">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="285" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1592811332014" />
-    <state width="1235" height="285" key="GridCell.Tab.0.right" timestamp="1592811332014">
+    <state width="1235" height="172" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1592857332074" />
+    <state width="1235" height="172" key="GridCell.Tab.0.right" timestamp="1592857332074">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="285" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1592811332014" />
-    <state width="1235" height="160" key="GridCell.Tab.1.bottom" timestamp="1592811331628">
+    <state width="1235" height="172" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1592857332074" />
+    <state width="1235" height="172" key="GridCell.Tab.1.bottom" timestamp="1592857332089">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="160" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1592811331628" />
-    <state width="1235" height="160" key="GridCell.Tab.1.center" timestamp="1592811331627">
+    <state width="1235" height="172" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1592857332089" />
+    <state width="1235" height="172" key="GridCell.Tab.1.center" timestamp="1592857332089">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="160" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1592811331627" />
-    <state width="1235" height="160" key="GridCell.Tab.1.left" timestamp="1592811331627">
+    <state width="1235" height="172" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1592857332089" />
+    <state width="1235" height="172" key="GridCell.Tab.1.left" timestamp="1592857332089">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="160" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1592811331627" />
-    <state width="1235" height="160" key="GridCell.Tab.1.right" timestamp="1592811331627">
+    <state width="1235" height="172" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1592857332089" />
+    <state width="1235" height="172" key="GridCell.Tab.1.right" timestamp="1592857332089">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1235" height="160" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1592811331627" />
+    <state width="1235" height="172" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1592857332089" />
     <state x="47" y="0" key="SettingsEditor" timestamp="1592705410278">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -295,9 +279,19 @@
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mywebserver/sender/HttpServletSender.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="75" />
+          <url>file://$PROJECT_DIR$/src/mywebserver/servlet/RequestDispatcher.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/course/PetServlet2.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mywebserver/servlet/HttpServletRequest.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/mywebserver/http/ErrorSender.java</url>

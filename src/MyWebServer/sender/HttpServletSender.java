@@ -1,6 +1,7 @@
 package mywebserver.sender;
 
 import mywebserver.HttpServer;
+import mywebserver.jsp.JspTranslation;
 import mywebserver.servlet.HttpServlet;
 import mywebserver.servlet.HttpServletRequest;
 import mywebserver.servlet.HttpServletResponse;
@@ -19,22 +20,46 @@ public class HttpServletSender implements Runnable {
 
     @Override
     public void run() {
-        try {
-            response.getOutputStream().writeBytes("HTTP/1.1 200 OK\r\n\r\n");
-            String value = HttpServer.servletMap.get(response.getRequest().getUrl());
-            Class aclass = Class.forName(value);
-            HttpServlet servlet = (HttpServlet) aclass.newInstance();
-            servlet.service(new HttpServletRequest(response.getRequest()), response);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+        if(response.getRequest().getUrl().endsWith(".jsp"))
+        {
+            try {
+                response.getOutputStream().writeBytes("HTTP/1.1 200 OK\r\n\r\n");
+                new JspTranslation().ofThe("response.getRequest().getUrl()");
+                //翻译******************************************************************
+                String value = "src/jsp/class/" + response.getRequest().getUrl() + ".java";
+                Class aclass = Class.forName(value);
+                HttpServlet servlet = (HttpServlet) aclass.newInstance();
+                    servlet.service(new HttpServletRequest(response.getRequest()), response);
+                } catch (ServletException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                } catch (InstantiationException e) {
+                    e.printStackTrace();
+                }
+        }
+        else {
+            try {
+                response.getOutputStream().writeBytes("HTTP/1.1 200 OK\r\n\r\n");
+                String value = HttpServer.servletMap.get(response.getRequest().getUrl());
+                Class aClass = Class.forName(value);
+                HttpServlet servlet = (HttpServlet) aClass.newInstance();
+                servlet.service(new HttpServletRequest(response.getRequest()), response);
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (ServletException e) {
+                e.printStackTrace();
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

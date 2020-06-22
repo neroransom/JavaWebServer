@@ -9,7 +9,7 @@ public class HttpServlet {
     public HttpServlet() {
     }
 
-    public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, IllegalAccessException, ClassNotFoundException, InstantiationException {
         if (request.getMethod().equals("GET")) {
             doGet(request, response);
        } else if (request.getMethod().equals("POST")) {
@@ -21,7 +21,7 @@ public class HttpServlet {
         new ErrorSender(response).sendHtml404Servlet();
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, IllegalAccessException, InstantiationException, ClassNotFoundException {
         new ErrorSender(response).sendHtml404Servlet();
     }
 

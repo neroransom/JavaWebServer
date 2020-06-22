@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class HttpRequest{
     //private BufferedReader in = null;
     private InputStream in;
-    String header = "";
+    protected String header = "";
     private String URI = "";
     private String method;
     Socket sock;
@@ -66,22 +66,5 @@ public class HttpRequest{
 
     public String getMethod() {
         return method;
-    }
-
-    public String getParameter(String par) {
-        if (header.contains(par + "=")) {
-            int begin = header.indexOf(par + "=");
-            int end = header.indexOf("&", begin);
-
-            if (end == -1) {
-                return header.substring(begin + par.length() + 1);
-            } else {
-                return header.substring(begin + par.length() + 1, end);
-            }
-        }
-        return null;
-    }
-
-    public void setAttribute(String pet, String pet1) {
     }
 }

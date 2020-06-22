@@ -28,8 +28,8 @@ public class PetServlet2 extends HttpServlet {
     } 
 
     public void doPost(HttpServletRequest req, 
-                       HttpServletResponse resp ) 
-        throws ServletException, IOException { 
+                       HttpServletResponse resp )
+            throws ServletException, IOException, IllegalAccessException, InstantiationException, ClassNotFoundException {
 
         // get the input field values 
         int petWeight = 0, petLegs = 0; 
@@ -42,7 +42,7 @@ public class PetServlet2 extends HttpServlet {
 
         String pet = recommendedPet(petWeight, petLegs); 
         req.setAttribute("pet",pet);
-    	RequestDispatcher requestDispatcher = req.getRequestDispatcher("show3.jsp");
+    	RequestDispatcher requestDispatcher = req.getRequestDispatcher("show.jsp");
 		requestDispatcher.forward(req, resp);
 
     } 
