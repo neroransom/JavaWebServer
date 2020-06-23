@@ -1,11 +1,14 @@
 package mywebserver.servlet;
 
 import mywebserver.http.HttpRequest;
+import mywebserver.jsp.session;
+
 import java.io.IOException;
 import java.net.Socket;
 import java.util.HashMap;
 
 public class HttpServletRequest extends HttpRequest {
+    session s = new session();
     HashMap<String,Object> attribute = new HashMap<String,Object>();
 
     public HttpServletRequest(HttpRequest request) throws IOException {
@@ -40,5 +43,9 @@ public class HttpServletRequest extends HttpRequest {
 
     public Object getAttribute(String key) {
         return attribute.get(key);
+    }
+
+    public session getSession() {
+        return s;
     }
 }

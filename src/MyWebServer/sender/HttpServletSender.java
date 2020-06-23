@@ -8,7 +8,6 @@ import mywebserver.servlet.HttpServletResponse;
 import mywebserver.servlet.ServletException;
 
 
-import java.io.File;
 import java.io.IOException;
 
 public class HttpServletSender implements Runnable {
@@ -31,9 +30,7 @@ public class HttpServletSender implements Runnable {
                 Class aClass = Class.forName(value);
                 HttpServlet servlet = (HttpServlet) aClass.newInstance();
                 servlet.service(new HttpServletRequest(response.getRequest()), response);
-                } catch (ServletException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
+                } catch (IOException | ServletException e) {
                     e.printStackTrace();
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
@@ -54,11 +51,11 @@ public class HttpServletSender implements Runnable {
                 e.printStackTrace();
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
-            } catch (ServletException e) {
-                e.printStackTrace();
             } catch (InstantiationException e) {
                 e.printStackTrace();
             } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (ServletException e) {
                 e.printStackTrace();
             }
         }

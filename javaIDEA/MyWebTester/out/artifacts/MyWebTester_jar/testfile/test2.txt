@@ -1,0 +1,9 @@
+<html>
+<body>
+<b>Testing for first JSP</b>
+<br>
+<b> current time is: 
+    Sun Jun 21 23:41:41 CST 2020 
+</b> 
+</body>
+</html>

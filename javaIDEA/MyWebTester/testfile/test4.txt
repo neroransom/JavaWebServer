@@ -1,0 +1,12 @@
+ <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<html> 
+此工作属于提高要求
+<body bgcolor="white"> 
+<h1>The Echo JSP - Testing for Jsp tasks</h1> 
+<br> header: user-agent value: Java/11.0.5
+<br> header: host value: localhost:8080
+<br> header: accept value: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<br> header: connection value: keep-alive
+ 
+</body> 
+</html> 

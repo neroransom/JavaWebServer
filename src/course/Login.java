@@ -1,12 +1,13 @@
 package course;
 
+import mywebserver.servlet.HttpServlet;
+import mywebserver.servlet.HttpServletRequest;
+import mywebserver.servlet.HttpServletResponse;
+import mywebserver.servlet.ServletException;
+
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
 
 /**
  * Servlet implementation class Login
@@ -27,7 +28,7 @@ public class Login extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, IllegalAccessException, InstantiationException, ClassNotFoundException {
 		// TODO Auto-generated method stub
 		String userName=request.getParameter("username");
 		String password=request.getParameter("password");

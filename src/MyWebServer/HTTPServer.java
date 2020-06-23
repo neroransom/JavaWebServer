@@ -12,7 +12,7 @@ import java.util.Map;
 public class HttpServer {
     public static Map<String, String> servletMap = new HashMap<>();
 
-    HttpServer() throws Exception {
+    HttpServer(int port) throws Exception {
 
         System.out.println("Loading configuration...");
         //String config = readFiletoString("web/WEB-INF/web.xml");
@@ -20,7 +20,7 @@ public class HttpServer {
         loadXML(config);
         config.toString();
 
-        final int httpd = 8081;
+        final int httpd = port;
         ServerSocket ssock = new ServerSocket(httpd);
         System.out.println("Listening the port 8081 locally...");
         while (true) {
@@ -31,13 +31,6 @@ public class HttpServer {
             new Thread(client).start();
 
         }
-
-//        try {
-//            ssock.close();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        System.out.println("HttpServer close");
     }
 
 

@@ -17,8 +17,6 @@ import mywebserver.servlet.HttpServletResponse;
 import mywebserver.servlet.ServletException;
 
 import java.io.*;
-import java.text.*; 
-import java.util.*; 
 
 public class PetServlet extends HttpServlet {
 

@@ -44,12 +44,13 @@ public class JspTranslation {
 
        while((end = jsp.indexOf("<%=",begin))!=-1)
         {
-           _jsp.append("out.write(\""+jsp.substring(begin,end)+"\");");
+            _jsp.append("out.write(\""+jsp.substring(begin,end).replaceAll(String.valueOf('\"'),"\\\\\"")+"\");");
             begin = end+3;
             end = jsp.indexOf("%>",begin);
             _jsp.append("out.println("+jsp.substring(begin,end)+");");
             begin = end+2;
         }
+       _jsp.append("out.write(\""+jsp.substring(begin).replaceAll(String.valueOf('\"'),"\\\\\"")+"\");");
        _jsp.append("out.flush();\nout.close();}}");
 
        FileWriter fwriter = new FileWriter(file);

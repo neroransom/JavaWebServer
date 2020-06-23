@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MyWebTester:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MyWebTester_jar</output-path>
+    <root id="archive" name="MyWebTester.jar">
+      <element id="module-output" name="MyWebTester" />
+    </root>
+  </artifact>
+</component>
