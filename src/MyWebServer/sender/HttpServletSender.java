@@ -8,6 +8,7 @@ import mywebserver.servlet.HttpServletResponse;
 import mywebserver.servlet.ServletException;
 
 
+import java.io.File;
 import java.io.IOException;
 
 public class HttpServletSender implements Runnable {
@@ -24,12 +25,12 @@ public class HttpServletSender implements Runnable {
         {
             try {
                 response.getOutputStream().writeBytes("HTTP/1.1 200 OK\r\n\r\n");
-                new JspTranslation().ofThe("response.getRequest().getUrl()");
-                //翻译******************************************************************
-                String value = "src/jsp/class/" + response.getRequest().getUrl() + ".java";
-                Class aclass = Class.forName(value);
-                HttpServlet servlet = (HttpServlet) aclass.newInstance();
-                    servlet.service(new HttpServletRequest(response.getRequest()), response);
+                new JspTranslation().ofThe(response.getRequest().getUrl());
+                String fileName = response.getRequest().getUrl();
+                String value = "mywebserver.jsp.jspclass." + fileName.substring(1, fileName.indexOf(".jsp")) + "_jsp";
+                Class aClass = Class.forName(value);
+                HttpServlet servlet = (HttpServlet) aClass.newInstance();
+                servlet.service(new HttpServletRequest(response.getRequest()), response);
                 } catch (ServletException e) {
                     e.printStackTrace();
                 } catch (IOException e) {

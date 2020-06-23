@@ -42,7 +42,7 @@ public class PetServlet2 extends HttpServlet {
 
         String pet = recommendedPet(petWeight, petLegs); 
         req.setAttribute("pet",pet);
-    	RequestDispatcher requestDispatcher = req.getRequestDispatcher("show.jsp");
+    	RequestDispatcher requestDispatcher = req.getRequestDispatcher("show3.jsp");
 		requestDispatcher.forward(req, resp);
 
     } 

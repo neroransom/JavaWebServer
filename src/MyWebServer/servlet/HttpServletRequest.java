@@ -37,4 +37,8 @@ public class HttpServletRequest extends HttpRequest {
     public RequestDispatcher getRequestDispatcher(String s) {
         return new RequestDispatcher(s);
     }
+
+    public Object getAttribute(String key) {
+        return attribute.get(key);
+    }
 }
